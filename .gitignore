@@ -1,0 +1,75 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Local runtime and sync state
+mutagen.yml.lock
+*.log
+*.tmp
+*.temp
+
+# Report: keep only generated PDFs under report/
+report/**
+!report/
+!report/**/
+!report/**/*.pdf
+
+# Data, datasets, and generated experiment artifacts
+data/
+datasets/
+artifacts/
+outputs/
+runs/
+reports/
+checkpoints/
+models/
+weights/
+wandb/
+mlruns/
+
+# Large archives and binary data dumps
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+*.gz
+*.bz2
+*.xz
+*.pkl
+*.pickle
+*.joblib
+*.npy
+*.npz
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.sqlite
+*.sqlite3
+*.db
+
+# Model checkpoints and training exports
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.bin

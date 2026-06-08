@@ -1,0 +1,14 @@
+sync:
+  defaults:
+    mode: one-way-safe
+    ignore:
+      vcs: true
+      paths:
+        - ".DS_Store"
+        - "__pycache__"
+        - ".pytest_cache"
+        - ".ruff_cache"
+        - ".venv"
+  diplom:
+    alpha: "."
+    beta: "JH:/home/margasanov/temki/diplom"

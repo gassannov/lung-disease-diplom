@@ -1,0 +1,25 @@
+name: resnet18_logmel
+task: train
+model:
+  type: resnet
+  backbone: resnet18
+  pretrained: false
+data:
+  index_csv: data/processed/index.csv
+  sample_rate: 16000
+  duration: 8.0
+features:
+  mel_bins: 128
+  window_ms: 25
+  hop_ms: 10
+training:
+  seed: 42
+  batch_size: 16
+  epochs: 30
+  lr: 0.0003
+  weight_decay: 0.0001
+  weighted_loss: true
+  weighted_sampler: true
+  device: cuda
+output_dir: reports/runs
+

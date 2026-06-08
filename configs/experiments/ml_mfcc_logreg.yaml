@@ -1,0 +1,16 @@
+name: ml_mfcc_logreg
+task: train
+model:
+  type: ml
+  estimator: logistic_regression
+data:
+  index_csv: data/processed/index.csv
+  sample_rate: 16000
+  duration: 8.0
+features:
+  mfcc: 40
+training:
+  seed: 42
+  class_weight: balanced
+output_dir: reports/runs
+
